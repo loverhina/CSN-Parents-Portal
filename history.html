@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSN Parent Portal</title>
     <link rel="stylesheet" href="css/styleshistory.css" /> <!-- Link to external CSS -->
-	 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Montserrat Font -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> <!-- Montserrat Font -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome CDN -->
 </head>
 <body>
@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li>
-                <a href="history.html">
+                <a href="history.html" class="active">
                     <i class="fas fa-history"></i>
                     <span class="nav-item">History</span>
                 </a>
@@ -63,40 +63,45 @@
             </ul>
         </div>
     </nav>
-        <main class="main-content">
-          <header class="header">
-            <h1>History</h1>
-            <div>
-              <input type="text" name="search" />
-              <button type="submit"><i class="fa fa-search"></i></button>
-            </div>
-          </header>
-          <section class="history-section">
-            <div class="tablecontainer">
-              <table class="history-table">
-                <thead>
-                  <tr>
-                    <th>DATE</th>
-                    <th>EVENT TITLE</th>
-                    <th>TYPE</th>
-                    <th>STATUS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>08/09/2024</td>
-                    <td>Parent-Child Creative Workshop 2024</td>
-                    <td>Training</td>
-                  </tr>
-                  <tr>
-                    <td>07/08/2024</td>
-                    <td>Understanding Emotional Needs</td>
-                    <td>Seminar</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
-        </main>
+
+    <main class="main-content">
+      <header class="header">
+        <h1>History</h1>
+        <div class="search-container">
+          <input type="text" name="search" placeholder="Search events" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+      </header>
+      
+      <section class="history-section">
+        <div class="table-container">
+          <table class="history-table">
+            <thead>
+              <tr>
+                <th>DATE</th>
+                <th>EVENT TITLE</th>
+                <th>TYPE</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08/09/2024</td>
+                <td>Parent-Child Creative Workshop 2024</td>
+                <td>Training</td>
+                <td>Present</td>
+              </tr>
+              <tr>
+                <td>07/08/2024</td>
+                <td>Understanding Emotional Needs</td>
+                <td>Seminar</td>
+                <td>Absent</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
 </body>
 </html>
